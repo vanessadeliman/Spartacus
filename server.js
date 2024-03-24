@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // URL de conexão ao MongoDB
-const uri = process.env.BANCO;
+const uri = `mongodb+srv://vdelima2017:${process.env.SENHA}@restaurante.5vfxlrl.mongodb.net/?retryWrites=true&w=majority`;
 
 async function main() {
   try {
