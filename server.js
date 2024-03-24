@@ -5,7 +5,7 @@ const cadastros = require('./routes/cadastros');
 const cliente = require('./routes/cliente');
 const cadastroUser = require('./routes/autenticacao');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // URL de conexão ao MongoDB
 const uri = "mongodb://127.0.0.1:27017/Restaurante";
